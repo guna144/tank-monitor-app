@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-7">
+            <h4>Tanks Geolocation</h4>
+            <div id="map" style="height: 500px; width: 700px"></div>
+        </div>
+        <div class="col-5">
+            <div *ngIf="clickedEvent">
+                <liquid-fill-gauge [event]="clickedEvent" [value]="clickedEvent" [minValue]="0" [maxValue]="100" [circleThickness]="0.05" [circleFillGap]="0.05"
+                [circleColor]="'#178BCA'" [waveHeight]="0.05" [waveCount]="2" [waveRiseTime]="1000" [waveAnimateTime]="1000" [waveRise]="true"
+                [waveHeightScaling]="true" [waveAnimate]="true" [waveColor]="'#178BCA'" [waveOffset]="0" [textVertPosition]=".5" [textSize]="1"
+                [valueCountUp]="true" [displayPercent]="true" [textColor]="'#045681'" [waveTextColor]="'#A4DBf8'">
+                </liquid-fill-gauge>
+            </div>            
+<!-- <app-ngx-d3-liquid-fill-gauge [value]="22"></app-ngx-d3-liquid-fill-gauge> -->
+            <map-table (eventClicked)="childEventClicked($event)"></map-table>
+            
+        </div>        
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<!-- /#wrapper -->
+<div id="wrapper">
+
+     <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                   Tanks Monitoring App
+                </a>
+            </li>
+            <li>
+                <a routerLinkActive="active" 
+                routerLink="/home">Dashboard</a>
+            </li>
+            <li>
+                <a routerLinkActive="active" 
+                routerLink="/map">Map Navigation</a>
+            </li>
+            <li>
+                <a routerLinkActive="active" 
+                routerLink="/chart">Charts</a>
+            </li>
+            <li>
+                <a routerLinkActive="active" 
+                routerLink="/home">Events</a>
+            </li>
+            <li>
+                <a routerLinkActive="active" 
+                routerLink="/home">About</a>
+            </li>
+            <li>
+                <a routerLinkActive="active" 
+                routerLink="/home">Services</a>
+            </li>
+            <li>
+                <a routerLinkActive="active" 
+                routerLink="/home">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <!-- <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle" onclick="myFunction(this)">Toggle Menu</a> -->
+            <div id="menu-toggle" class="container" >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>                  
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <router-outlet></router-outlet>
+</div>
+<!-- /#wrapper -->
